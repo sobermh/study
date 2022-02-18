@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="371f52c2-f96c-445a-bfa1-a0c5ceb88aee" name="变更" comment="验证">
-      <change afterPath="$PROJECT_DIR$/HJWEB_UI/Case/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HJWEB_UI/Page/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HJWEB_UI/Run.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HJWEB_UI/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/requests.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/requests.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APITest/APITest.py" beforeDir="false" afterPath="$PROJECT_DIR$/APITest/APITest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,17 +57,17 @@
       <recent name="E:\PycharmProjects\pingcode_excel" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Run">
+  <component name="RunManager" selected="Python.APITest">
     <configuration name="APITest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="requests" />
+      <module name="pythonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\admin\PycharmProjects\pythonProject\venv\Scripts\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/APITest" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/APITest/APITest.py" />
@@ -127,8 +123,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Run" />
         <item itemvalue="Python.APITest" />
+        <item itemvalue="Python.Run" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +186,21 @@
       <option name="project" value="LOCAL" />
       <updated>1645110504699</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="验证">
+      <created>1645163326833</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1645163326833</updated>
+    </task>
+    <task id="LOCAL-00009" summary="验证">
+      <created>1645163534133</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1645163534133</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

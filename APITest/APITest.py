@@ -18,5 +18,5 @@ class TestRequests():
         # data:可以传纯键值对的dict（非嵌套的dict），也可以穿str格式
         # json：可以传任何形式的dict（包括嵌套的dict）
 
-if __name__=="__main__":
-    TestRequests().login_get_token()
+# if __name__=="__main__":
+TestRequests().login_get_token()
