@@ -5,6 +5,9 @@
 
 import requests
 
+# 定义一个全局变量；类变量。通过类名调用
+token = ""
+
 
 class TestRequests():
     def login_get_token(self):
@@ -17,6 +20,35 @@ class TestRequests():
         print(res.json())
         # data:可以传纯键值对的dict（非嵌套的dict），也可以穿str格式
         # json：可以传任何形式的dict（包括嵌套的dict）
+        global token
+        token = res.json()['token']
 
-# if __name__=="__main__":
-TestRequests().login_get_token()
+    def add_sample(self):
+        global token
+        url = "https://clinms.top/api/sample"
+        data = {
+            "sys_id": 0,
+            "type": 0,
+            "cid": "",
+            "collect_time": "2020-12-22 13:42:00",
+             "channel": "",
+             "risk":"",
+             "result": "",
+             "guidance": ""
+        }
+        headers={
+            "Authorization": "Bearer<" + token + ">"
+        }
+        res = requests.post(url, json=data,headers=headers)
+        print(res.status_code)
+
+
+if __name__ == "__main__":
+    TestRequests().login_get_token()
+    print(token)
+    TestRequests().add_sample()
+
+
+#不管是get还是post还是put和delete，都是调用requests.request方法。
+#requests.requests方法调用的是session.reques方法
+
