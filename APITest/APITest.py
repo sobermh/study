@@ -52,3 +52,12 @@ if __name__ == "__main__":
 #不管是get还是post还是put和delete，都是调用requests.request方法。
 #requests.requests方法调用的是session.reques方法
 
+def setup(self):
+    print("在每个用例之前执行一次：初始化日志对象，初始化数据库连接")
+def teardowm(self):
+    print("在每个用例之后执行一次；关闭日志对象，初始化数据库连接")
+
+def setup_class(self):
+    print("在每个类之前执行")
+def teardowm_class(self):
+    print("在每个类之前执行")
