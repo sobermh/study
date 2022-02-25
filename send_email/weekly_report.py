@@ -15,9 +15,9 @@ import datetime
 from_addr = "maohui@well-healthcare.com"
 authcodes = "HY8KcFe3wb8GZ6Wu"
 # 输入收件人地址：
-to_addr = "409788696@qq.com"
+to_addr = "loudanchen@well-healthcare.com"
 # 输入抄送人地址：
-cc_addr = "maohui@well-healthcare.com"
+cc_addr = "yexiaogang@well-healthcare.com"
 # 输入SMTP服务器地址
 smtp_server = "smtp.exmail.qq.com"
 
