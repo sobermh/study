@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="371f52c2-f96c-445a-bfa1-a0c5ceb88aee" name="变更" comment="自动化邮件">
+    <list default="true" id="371f52c2-f96c-445a-bfa1-a0c5ceb88aee" name="变更" comment="汉诺塔问题">
       <change afterPath="$PROJECT_DIR$/BugFileChange/Bug_to_pingcode_.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +48,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -61,7 +59,7 @@
       <recent name="E:\PycharmProjects\pingcode_excel" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.hannuota_test">
+  <component name="RunManager" selected="Python.Bug_to_pingcode_">
     <configuration name="APITest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -190,8 +188,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.hannuota_test" />
         <item itemvalue="Python.Bug_to_pingcode_" />
+        <item itemvalue="Python.hannuota_test" />
         <item itemvalue="Python.weekly_report" />
         <item itemvalue="Python.Excel_read_write" />
         <item itemvalue="Python.APITest" />
@@ -319,7 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645782068322</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="汉诺塔问题">
+      <created>1646197831234</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1646197831234</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -343,6 +348,7 @@
     <MESSAGE value="验证" />
     <MESSAGE value="接口自动化" />
     <MESSAGE value="自动化邮件" />
-    <option name="LAST_COMMIT_MESSAGE" value="自动化邮件" />
+    <MESSAGE value="汉诺塔问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="汉诺塔问题" />
   </component>
 </project>
