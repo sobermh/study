@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="371f52c2-f96c-445a-bfa1-a0c5ceb88aee" name="变更" comment="pingcode缺陷导入">
-      <change afterPath="$PROJECT_DIR$/practical-skill/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practical-skill/demo1.py" afterDir="false" />
+    <list default="true" id="371f52c2-f96c-445a-bfa1-a0c5ceb88aee" name="变更" comment="练习">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/send_email/weekly_report.py" beforeDir="false" afterPath="$PROJECT_DIR$/send_email/weekly_report.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +59,7 @@
       <recent name="E:\PycharmProjects\pingcode_excel" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.demo1">
+  <component name="RunManager" selected="Python.weekly_report">
     <configuration name="Bug_to_pingcode_" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="requests" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -145,27 +144,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="hannuota_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="requests" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="E:\PycharmProjects\study1\test\hannuota_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="requests" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -187,13 +165,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="weekly_report" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="requests" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/send_email" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/send_email/weekly_report.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.weekly_report" />
         <item itemvalue="Python.demo1" />
         <item itemvalue="Python.hannuota_test (1)" />
         <item itemvalue="Python.Excel_read_write" />
         <item itemvalue="Python.Bug_to_pingcode_" />
-        <item itemvalue="Python.hannuota_test" />
       </list>
     </recent_temporary>
   </component>
@@ -332,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646199453035</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="练习">
+      <created>1646286278884</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1646286278884</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -358,6 +364,7 @@
     <MESSAGE value="自动化邮件" />
     <MESSAGE value="汉诺塔问题" />
     <MESSAGE value="pingcode缺陷导入" />
-    <option name="LAST_COMMIT_MESSAGE" value="pingcode缺陷导入" />
+    <MESSAGE value="练习" />
+    <option name="LAST_COMMIT_MESSAGE" value="练习" />
   </component>
 </project>
