@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="371f52c2-f96c-445a-bfa1-a0c5ceb88aee" name="变更" comment="练习">
+    <list default="true" id="371f52c2-f96c-445a-bfa1-a0c5ceb88aee" name="变更" comment="周报脚本新增设置收件人别名">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/send_email/weekly_report.py" beforeDir="false" afterPath="$PROJECT_DIR$/send_email/weekly_report.py" afterDir="false" />
     </list>
@@ -48,15 +48,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\PycharmProjects\study1\test" />
       <recent name="E:\PycharmProjects\study1\HJWEB_UIAuto" />
       <recent name="C:\Users\admin\PycharmProjects\study\APITest" />
       <recent name="C:\Users\admin\PycharmProjects\study\API" />
       <recent name="E:\PycharmProjects\requests" />
-      <recent name="E:\PycharmProjects\pingcode_excel" />
     </key>
   </component>
   <component name="RunManager" selected="Python.weekly_report">
@@ -338,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646286278884</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="周报脚本新增设置收件人别名">
+      <created>1646389190638</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1646389190638</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -365,6 +372,7 @@
     <MESSAGE value="汉诺塔问题" />
     <MESSAGE value="pingcode缺陷导入" />
     <MESSAGE value="练习" />
-    <option name="LAST_COMMIT_MESSAGE" value="练习" />
+    <MESSAGE value="周报脚本新增设置收件人别名" />
+    <option name="LAST_COMMIT_MESSAGE" value="周报脚本新增设置收件人别名" />
   </component>
 </project>

@@ -3,11 +3,11 @@
 @time:2022/2/24 11:45
 """
 
-import smtplib  # 发送
+from smtplib  import SMTPException#发生失败异常处理
 import time
 from email.utils import parseaddr, formataddr#自定义收件人和抄送人的信息
 
-from smtplib import SMTP_SSL  # 加密邮件内容
+from smtplib import SMTP_SSL  # 加密及发送邮件内容
 from email.mime.text import MIMEText  # 构造邮件的正文
 from email.mime.application import MIMEApplication  # 添加附件
 from email.mime.multipart import MIMEMultipart  # 邮件的主体
@@ -15,7 +15,7 @@ import datetime
 
 # 输入email地址和口令
 from_addr = "maohui@well-healthcare.com"
-authcodes = "gdEtoGg6mEGhU9N6"
+authcodes = "3CtFPKCAf62ogRVX"
 # 输入收件人地址：
 to_addr = "loudanchen@well-healthcare.com"
 # to_addr = "1439466614@qq.com"
@@ -31,7 +31,7 @@ print(mail_title)
 # 输入邮件内容
 mail_content = "尊敬的领导们：" \
                "<p>&nbsp&nbsp&nbsp&nbsp您们好！</p>" \
-               "<p>&nbsp&nbsp&nbsp&nbsp附件为我2022-02-28至"+str(datetime.date.today())+"的工作周报，请您查阅，如有不足需改进的地方，请您提出宝贵意见，我将在日后的工作中及时改进。谢谢！</p>"
+               "<p>&nbsp&nbsp&nbsp&nbsp附件为我2022-03-07至"+str(datetime.date.today())+"的工作周报，请您查阅，如有不足需改进的地方，请您提出宝贵意见，我将在日后的工作中及时改进。谢谢！</p>"
 file_path='c:\周报\\'+mail_title+'.xlsx'
 print(file_path)
 # 打开附件
@@ -48,7 +48,7 @@ def _format_addr(s):
 # 初始化对象
 msg = MIMEMultipart()  # 初始化邮件主体
 msg['Subject'] = mail_title  # 放入标题
-msg['From'] = from_addr  # 放入发送人
+msg['From'] = _format_addr(u'毛辉<%s>'%from_addr)  # 放入发送人
 msg['To'] = _format_addr(u'楼总<%s>'%to_addr)  # 放入收件人
 msg['Cc'] = _format_addr(u'叶总<%s>'%cc_addr)  # 放入抄送人
 # 发送正文
@@ -62,6 +62,6 @@ try:
     smtp.sendmail(from_addr, to_addr.split(",") + cc_addr.split(","), msg.as_string())
     print("邮件发送成功")
     smtp.quit()
-except smtplib.SMTPException:
+except SMTPException:
     print('无法发送邮件')
 
