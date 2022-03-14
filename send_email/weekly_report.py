@@ -16,7 +16,6 @@ import datetime
 # 输入email地址和口令
 from_addr = "maohui@well-healthcare.com"
 
-
 authcodes = "3CtFPKCAf62ogRVX"
 # 输入收件人地址：
 # to_addr = "loudanchen@well-healthcare.com"
