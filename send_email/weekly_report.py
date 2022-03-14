@@ -15,24 +15,27 @@ import datetime
 
 # 输入email地址和口令
 from_addr = "maohui@well-healthcare.com"
+
+
 authcodes = "3CtFPKCAf62ogRVX"
 # 输入收件人地址：
-to_addr = "loudanchen@well-healthcare.com"
-# to_addr = "1439466614@qq.com"
-# 输入抄送人地址：
-cc_addr = "yexiaogang@well-healthcare.com"
-# cc_addr = "409788696@qq.com"
+# to_addr = "loudanchen@well-healthcare.com"
+# # to_addr = "1439466614@qq.com"
+# # 输入抄送人地址：
+# cc_addr = "yexiaogang@well-healthcare.com"
+# # cc_addr = "409788696@qq.com"
 # 输入SMTP服务器地址
 smtp_server = "smtp.exmail.qq.com"
 
 # 输入主题
 mail_title = '周报_毛辉_'+str(datetime.date.today())
 print(mail_title)
-# 输入邮件内容
+# 输入邮件内容,编辑发送的内容
 mail_content = "尊敬的领导们：" \
                "<p>&nbsp&nbsp&nbsp&nbsp您们好！</p>" \
-               "<p>&nbsp&nbsp&nbsp&nbsp附件为我2022-03-07至"+str(datetime.date.today())+"的工作周报，请您查阅，如有不足需改进的地方，请您提出宝贵意见，我将在日后的工作中及时改进。谢谢！</p>"
-file_path='c:\周报\\'+mail_title+'.xlsx'
+               "<p>&nbsp&nbsp&nbsp&nbsp附件为我"+str(datetime.date.today()-datetime.timedelta(days=4))+"至"+str(datetime.date.today())+"的工作周报，请您查阅，如有不足需改进的地方，请您提出宝贵意见，我将在日后的工作中及时改进。谢谢！</p>"
+file_path='D:\周报\\'+mail_title+'.xlsx'
+print(str(datetime.date.today()-datetime.timedelta(days=4)))
 print(file_path)
 # 打开附件
 xlsx = MIMEApplication(open(file_path, 'rb').read())
