@@ -16,7 +16,10 @@ import datetime
 # 输入email地址和口令
 from_addr = "maohui@well-healthcare.com"
 
-authcodes = "3CtFPKCAf62ogRVX"
+# 读取保存安全登录码的文件
+with open('D:\周报\python-authcodes.txt',mode='r',encoding='utf-8') as file:
+    authcodes=file.read()
+print(authcodes)
 # 输入收件人地址：
 # to_addr = "loudanchen@well-healthcare.com"
 # # to_addr = "1439466614@qq.com"
@@ -33,8 +36,8 @@ print(mail_title)
 mail_content = "尊敬的领导们：" \
                "<p>&nbsp&nbsp&nbsp&nbsp您们好！</p>" \
                "<p>&nbsp&nbsp&nbsp&nbsp附件为我"+str(datetime.date.today()-datetime.timedelta(days=4))+"至"+str(datetime.date.today())+"的工作周报，请您查阅，如有不足需改进的地方，请您提出宝贵意见，我将在日后的工作中及时改进。谢谢！</p>"
-file_path='D:\周报\\'+mail_title+'.xlsx'
 print(str(datetime.date.today()-datetime.timedelta(days=4)))
+file_path='D:\周报\\'+mail_title+'.xlsx'
 print(file_path)
 # 打开附件
 xlsx = MIMEApplication(open(file_path, 'rb').read())
