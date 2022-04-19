@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="371f52c2-f96c-445a-bfa1-a0c5ceb88aee" name="变更" comment="the security login code is saved locally;use after read">
-      <change afterPath="$PROJECT_DIR$/test/os/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/os/os basic.py" afterDir="false" />
+    <list default="true" id="371f52c2-f96c-445a-bfa1-a0c5ceb88aee" name="变更" comment="os study">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BugFileChange/Bug_to_pingcode_.py" beforeDir="false" afterPath="$PROJECT_DIR$/BugFileChange/Bug_to_pingcode_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/send_email/weekly_report.py" beforeDir="false" afterPath="$PROJECT_DIR$/send_email/weekly_report.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +49,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -60,7 +60,7 @@
       <recent name="E:\PycharmProjects\requests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.os basic">
+  <component name="RunManager" selected="Python.weekly_report">
     <configuration name="Excel_read_write" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -189,8 +189,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.os basic" />
         <item itemvalue="Python.weekly_report" />
+        <item itemvalue="Python.os basic" />
         <item itemvalue="Python.demo1" />
         <item itemvalue="Python.hannuota_test (1)" />
         <item itemvalue="Python.Excel_read_write" />
@@ -374,7 +374,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647570833944</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="os study">
+      <created>1647573107303</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1647573107303</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -405,6 +412,7 @@
     <MESSAGE value="周报脚本新增设置发件人别名" />
     <MESSAGE value="周报脚本更新附件地址" />
     <MESSAGE value="the security login code is saved locally;use after read" />
-    <option name="LAST_COMMIT_MESSAGE" value="the security login code is saved locally;use after read" />
+    <MESSAGE value="os study" />
+    <option name="LAST_COMMIT_MESSAGE" value="os study" />
   </component>
 </project>

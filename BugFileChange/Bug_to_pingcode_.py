@@ -9,7 +9,7 @@ from openpyxl import workbook
 
 
 #读取原生的bug_excel文件
-wb1=load_workbook('C:/Users/PC/Desktop/GZH-06-02.xlsx')
+wb1=load_workbook('C:/Users/PC/Desktop/GZH-09-01.xlsx')
 #激活要操作的表
 sheet1=wb1['Sheet1']
 #获取需要导出的单元格的列最大值

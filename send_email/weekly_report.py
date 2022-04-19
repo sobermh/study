@@ -22,10 +22,10 @@ with open('D:\周报\python-authcodes.txt',mode='r',encoding='utf-8') as file:
 print(authcodes)
 # 输入收件人地址：
 # to_addr = "loudanchen@well-healthcare.com"
-# # to_addr = "1439466614@qq.com"
+# to_addr = "1439466614@qq.com"
 # # 输入抄送人地址：
 # cc_addr = "yexiaogang@well-healthcare.com"
-# # cc_addr = "409788696@qq.com"
+# cc_addr = "409788696@qq.com"
 # 输入SMTP服务器地址
 smtp_server = "smtp.exmail.qq.com"
 
