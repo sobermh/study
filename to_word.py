@@ -5,9 +5,9 @@
 
 from openpyxl import load_workbook
 from openpyxl import workbook
-
+from openpyxl.styles import Font
 def huoqu():
-    wb1=load_workbook('C:/Users/PC/Desktop/1.xlsx')
+    wb1=load_workbook('C:/Users/admin/Desktop/1.xlsx')
 
     sheet_lc=wb1['临床信息']
     sheet_zh=wb1['质荷比']
@@ -36,7 +36,7 @@ def huoqu():
             listzhihebi_n.append(list2[6])
 
 def xieru(listID,listsexy,listage,listmsg,listpic,listzhihebi_j,listzhihebi_k,listzhihebi_l,listzhihebi_m,listzhihebi_n):
-    wb2=load_workbook("C:/Users/PC/Desktop/2.xlsx")
+    wb2=load_workbook("C:/Users/admin/Desktop/2.xlsx")
     sheetIn=wb2['Sheet2']
     #处理有些单元格合并，有些未合并(行，列，值)
     #num
@@ -70,21 +70,30 @@ def xieru(listID,listsexy,listage,listmsg,listpic,listzhihebi_j,listzhihebi_k,li
         sheetIn.cell(i+4, 9, listpic[i - 1])
     #,listzhihebi_j,listzhihebi_k,listzhihebi_l,listzhihebi_m,listzhihebi_n
     for i in range(0,len(listzhihebi_j)):
-            sheetIn.cell(i+5, 10, listzhihebi_j[i])
+        str='平均值'
+        sheetIn.cell(i + 5, 10, str)
+        sheetIn.cell(i+5, 10, listzhihebi_j[i])
     for i in range(0,len(listzhihebi_k)):
-            sheetIn.cell(i+5, 11, listzhihebi_k[i])
+        sheetIn.cell(i+5, 11, listzhihebi_k[i])
     for i in range(0,len(listzhihebi_l)):
-            sheetIn.cell(i+5, 12, listzhihebi_l[i])
+        sheetIn.cell(i+5, 12, listzhihebi_l[i])
     for i in range(0,len(listzhihebi_m)):
-            sheetIn.cell(i+5, 13, listzhihebi_m[i])
+        sheetIn.cell(i+5, 13, listzhihebi_m[i])
     for i in range(0,len(listzhihebi_n)):
-            sheetIn.cell(i+5, 14, listzhihebi_n[i])
+        sheetIn.cell(i+5, 14, listzhihebi_n[i])
     # 受试者排除标准、中止试验标准
     for i in range(5, sheetIn.max_row + 1):
         sheetIn.cell(i, 6, '/')
     for i in range(5, sheetIn.max_row + 1):
         sheetIn.cell(i, 7, '/')
-    wb2.save("C:/Users/PC/Desktop/2.xlsx")
+    # 样本入选标准
+    for i in range(0, len(listmsg)):
+        flag = 5 + i * 4
+        sheetIn.cell(flag, 5, "")
+        sheetIn.merge_cells(start_row=flag, start_column=5, end_row=flag + 3, end_column=5)
+    wb2.save("C:/Users/admin/Desktop/2.xlsx")
+
+
 
 if __name__=="__main__":
     listID=[]
