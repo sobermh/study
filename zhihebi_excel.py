@@ -4,11 +4,12 @@
 """
 
 from openpyxl import load_workbook
+from openpyxl.worksheet.pagebreak import Break
 from openpyxl import workbook
 import xlsxwriter
 
 def huoqu():
-    wb1=load_workbook('C:/Users/PC/Desktop/1.xlsx')
+    wb1=load_workbook('./1.xlsx')
 
     sheet_lc=wb1['临床信息']
     sheet_zh=wb1['质荷比']
@@ -38,7 +39,7 @@ def huoqu():
 
 
 def xieru(listID,listsexy,listage,listmsg,listpic,listzhihebi_j,listzhihebi_k,listzhihebi_l,listzhihebi_m,listzhihebi_n):
-    workbook = xlsxwriter.Workbook('C:/Users/PC/Desktop/2.xlsx')
+    workbook = xlsxwriter.Workbook('./质荷比.xlsx')
     sheet1 = {
         'align': 'center',  # 水平居中对齐
         'valign': 'vcenter',  # 垂直居中对齐'
@@ -201,11 +202,25 @@ def xieru(listID,listsexy,listage,listmsg,listpic,listzhihebi_j,listzhihebi_k,li
     for i in range(1, len(listmsg) + 1):
         flag = 6 + (i - 1) * 4
         worksheet.merge_range('O%d:O%d' % (flag, flag + 3), "是 S\n否 □",style2)
+    # 设置列宽(字符)
+    worksheet.set_column('A:A', 3)
+    worksheet.set_column('C:D', 4)
+    worksheet.set_column('J:N', 10)
+    worksheet.set_default_row(30)
+    worksheet.set_column('H:H', 12)
 
-
+    row_pre_page = 27  # 定义一页有多少行
     workbook.close()
-
-
+# def fenye():
+#     wb3=load_workbook("./峰高.xlsx")
+#     sheetwork2=wb3['Sheet1']
+#
+#     row_number = 30  # 需要插入分页符的行号
+#     # 插入水平分页符
+#     next_page_horizon, next_page_vertical = sheetwork2.page_breaks
+#     next_page_horizon.append(Break(row_number))
+#
+#     wb3.save("./峰高.xlsx")
 
 if __name__=="__main__":
     listID=[]
@@ -221,9 +236,7 @@ if __name__=="__main__":
     listzhihebi_m = []
     listzhihebi_n = []
     huoqu()
-    # try:
     xieru(listID,listsexy,listage,listmsg,listpic,listzhihebi_j,listzhihebi_k,listzhihebi_l,listzhihebi_m,listzhihebi_n)
+    # fenye()
     print('succeed')
 
-    # except:
-    #     print('shibai')

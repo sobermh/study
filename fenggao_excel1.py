@@ -8,7 +8,7 @@ from openpyxl import workbook
 import xlsxwriter
 
 def huoqu():
-    wb1=load_workbook('C:/Users/PC/Desktop/1.xlsx')
+    wb1=load_workbook('./1.xlsx')
 
     sheet_lc=wb1['临床信息']
     sheet_zh=wb1['峰高']
@@ -38,7 +38,7 @@ def huoqu():
 
 
 def xieru(listID,listsexy,listage,listmsg,listpic,listzhihebi_j,listzhihebi_k,listzhihebi_l,listzhihebi_m,listzhihebi_n):
-    workbook = xlsxwriter.Workbook('C:/Users/PC/Desktop/3.xlsx')
+    workbook = xlsxwriter.Workbook('./峰高.xlsx')
     sheet1 = {
         'align': 'center',  # 水平居中对齐
         'valign': 'vcenter',  # 垂直居中对齐'
@@ -201,9 +201,11 @@ def xieru(listID,listsexy,listage,listmsg,listpic,listzhihebi_j,listzhihebi_k,li
     for i in range(1, len(listmsg) + 1):
         flag = 6 + (i - 1) * 4
         worksheet.merge_range('O%d:O%d' % (flag, flag + 3), "是 S\n否 □",style2)
-    #设置列宽
-    worksheet.set_column(0,3)
-
+    #设置列宽(字符)
+    worksheet.set_column('A:A',3)
+    worksheet.set_column('C:D',4)
+    worksheet.set_column('J:N', 10)
+    worksheet.set_column('H:H', 12)
     workbook.close()
 
 

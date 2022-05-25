@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="371f52c2-f96c-445a-bfa1-a0c5ceb88aee" name="变更" comment="openpyxl">
-      <change afterPath="$PROJECT_DIR$/1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CRF 表格.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fenggao_excel1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zhihebi_excel.py" afterDir="false" />
+    <list default="true" id="371f52c2-f96c-445a-bfa1-a0c5ceb88aee" name="变更" comment="调整">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/requests.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/requests.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/to_word.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fenggao_excel1.py" beforeDir="false" afterPath="$PROJECT_DIR$/fenggao_excel1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zhihebi_excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/zhihebi_excel.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,14 +51,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\PycharmProjects\study1" />
-      <recent name="E:\PycharmProjects\study1\test" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\PycharmProjects\study1\test" />
       <recent name="E:\PycharmProjects\study1\HJWEB_UIAuto" />
@@ -71,28 +62,7 @@
       <recent name="E:\PycharmProjects\requests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.fenggao_excel1">
-    <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="requests" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.zhihebi_excel">
     <configuration name="fenggao_excel1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="requests" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -156,6 +126,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="to_word" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="requests" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/to_word.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="weekly_report" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="requests" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -177,7 +168,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="zhihebi_excel (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="zhihebi_excel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="requests" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -198,38 +189,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="zhihebi_excel" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="requests" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="E:\PycharmProjects\study1\zhihebi_excel.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.main" />
       <item itemvalue="Python.os basic" />
+      <item itemvalue="Python.to_word" />
       <item itemvalue="Python.weekly_report" />
-      <item itemvalue="Python.1" />
-      <item itemvalue="Python.zhihebi_excel" />
-      <item itemvalue="Python.zhihebi_excel (1)" />
       <item itemvalue="Python.fenggao_excel1" />
+      <item itemvalue="Python.zhihebi_excel" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.zhihebi_excel" />
         <item itemvalue="Python.fenggao_excel1" />
-        <item itemvalue="Python.zhihebi_excel (1)" />
-        <item itemvalue="Python.1" />
+        <item itemvalue="Python.to_word" />
         <item itemvalue="Python.weekly_report" />
         <item itemvalue="Python.os basic" />
       </list>
