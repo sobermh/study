@@ -9,7 +9,7 @@ from openpyxl import workbook
 import xlsxwriter
 
 def huoqu():
-    wb1=load_workbook('./1.xlsx')
+    wb1=load_workbook('./1.xlsx',data_only=True)
 
     sheet_lc=wb1['临床信息']
     sheet_zh=wb1['质荷比']
