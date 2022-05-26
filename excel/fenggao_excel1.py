@@ -93,7 +93,7 @@ def xieru(listID,listsexy,listage,listmsg,listpic,listzhihebi_j,listzhihebi_k,li
     #num
     for i in range(1,len(listID)+1):
         flag=6+(i-1)*4
-        worksheet.merge_range('A%d:A%d'%(flag,flag+3),i,style1)
+        worksheet.merge_range('A%d:A%d'%(flag,flag+3),"%03d"%i,style1)
     #id
     for i in range(1,len(listID)+1):
         flag = 6 + (i - 1) * 4

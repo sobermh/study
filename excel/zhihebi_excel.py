@@ -94,7 +94,7 @@ def xieru(listID,listsexy,listage,listmsg,listpic,listzhihebi_j,listzhihebi_k,li
     #num
     for i in range(1,len(listID)+1):
         flag=6+(i-1)*4
-        worksheet.merge_range('A%d:A%d'%(flag,flag+3),i,style1)
+        worksheet.merge_range('A%d:A%d'%(flag,flag+3),"%03d"%i,style1)
     #id
     for i in range(1,len(listID)+1):
         flag = 6 + (i - 1) * 4
@@ -204,7 +204,7 @@ def xieru(listID,listsexy,listage,listmsg,listpic,listzhihebi_j,listzhihebi_k,li
         flag = 6 + (i - 1) * 4
         worksheet.merge_range('O%d:O%d' % (flag, flag + 3), "是 S\n否 □",style2)
     # 设置列宽(字符)
-    worksheet.set_column('A:A', 3)
+    worksheet.set_column('A:A', 4)
     worksheet.set_column('C:D', 4)
     worksheet.set_column('J:N', 10)
     worksheet.set_default_row(25)
