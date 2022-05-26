@@ -44,7 +44,8 @@ def xieru(listID,listsexy,listage,listmsg,listpic,listzhihebi_j,listzhihebi_k,li
         'align': 'center',  # 水平居中对齐
         'valign': 'vcenter',  # 垂直居中对齐'
         'text_wrap': 1,
-        'border': 5,  # 边框宽度
+        'border': 5,# 边框宽度
+        'font_size': 14
     }
     sheet_2={
         'align': 'center',  # 水平居中对齐
@@ -206,7 +207,7 @@ def xieru(listID,listsexy,listage,listmsg,listpic,listzhihebi_j,listzhihebi_k,li
     worksheet.set_column('A:A', 3)
     worksheet.set_column('C:D', 4)
     worksheet.set_column('J:N', 10)
-    worksheet.set_default_row(30)
+    worksheet.set_default_row(25)
     worksheet.set_column('H:H', 12)
 
     row_pre_page = 27  # 定义一页有多少行

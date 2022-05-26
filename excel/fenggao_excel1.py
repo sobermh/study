@@ -44,6 +44,7 @@ def xieru(listID,listsexy,listage,listmsg,listpic,listzhihebi_j,listzhihebi_k,li
         'valign': 'vcenter',  # 垂直居中对齐'
         'text_wrap': 1,
         'border': 5,  # 边框宽度
+        'font_size': 14
     }
     sheet_2={
         'align': 'center',  # 水平居中对齐
@@ -196,7 +197,11 @@ def xieru(listID,listsexy,listage,listmsg,listpic,listzhihebi_j,listzhihebi_k,li
     # 样本入选标准
     for i in range(1, len(listmsg) + 1):
         flag = 6 + (i - 1) * 4
-        worksheet.merge_range('E%d:E%d' % (flag, flag + 3), "是 S\n否 □",style2)
+        worksheet.write_rich_string("E%d" % (flag),
+                                     style1, "是",
+                                     style2, "S",
+                                    style1,"\n 否 □")
+        # worksheet.merge_range('E%d:E%d' % (flag, flag + 3))
     # 偏移
     for i in range(1, len(listmsg) + 1):
         flag = 6 + (i - 1) * 4
