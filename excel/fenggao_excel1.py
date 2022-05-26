@@ -39,6 +39,12 @@ def huoqu():
 
 def xieru(listID,listsexy,listage,listmsg,listpic,listzhihebi_j,listzhihebi_k,listzhihebi_l,listzhihebi_m,listzhihebi_n):
     workbook = xlsxwriter.Workbook('峰高.xlsx')
+    center={
+        'align': 'center',  # 水平居中对齐
+        'valign': 'vcenter',  # 垂直居中对齐'
+        'text_wrap': 1,
+        'border': 5,  # 边框宽度
+    }
     sheet1 = {
         'align': 'center',  # 水平居中对齐
         'valign': 'vcenter',  # 垂直居中对齐'
@@ -51,7 +57,8 @@ def xieru(listID,listsexy,listage,listmsg,listpic,listzhihebi_j,listzhihebi_k,li
         'valign': 'vcenter',  # 垂直居中对齐'
         'text_wrap': 1,
         'border': 5,  # 边框宽度
-        'font':"Wingdings 2"######使用R可以插入单选框
+        'font':"Wingdings 2",######使用R可以插入单选框
+        'font_size': 14
     }
     sheet_title={
         'align': 'center',  # 水平居中对齐
@@ -68,6 +75,7 @@ def xieru(listID,listsexy,listage,listmsg,listpic,listzhihebi_j,listzhihebi_k,li
     style1=workbook.add_format(sheet1)
     style2=workbook.add_format(sheet_2)
     style_title=workbook.add_format(sheet_title)
+    style_center=workbook.add_format(center)
 
     #title
     worksheet.merge_range('A2:O2',"飞行时间质谱仪 临床研究原始记录A",style_title)
@@ -81,7 +89,7 @@ def xieru(listID,listsexy,listage,listmsg,listpic,listzhihebi_j,listzhihebi_k,li
     worksheet.merge_range('G4:G5', "中止试验标准", style_title)
     worksheet.merge_range('H4:H5', "临床诊断", style_title)
     worksheet.merge_range('I4:I5', "质谱图编号", style_title)
-    worksheet.merge_range('J4:N4', "质荷比（m/z）", style_title)
+    worksheet.merge_range('J4:N4', "峰强度", style_title)
     # worksheet.merge_range('F4:F5', "序号", style_title)
     worksheet.write('J5', 926.35, style_title)
     worksheet.write('K5', 2933.03, style_title)
@@ -197,15 +205,21 @@ def xieru(listID,listsexy,listage,listmsg,listpic,listzhihebi_j,listzhihebi_k,li
     # 样本入选标准
     for i in range(1, len(listmsg) + 1):
         flag = 6 + (i - 1) * 4
+        worksheet.merge_range('E%d:E%d' % (flag, flag + 3),1,style1)
         worksheet.write_rich_string("E%d" % (flag),
-                                     style1, "是",
+                                     style1, "是 ",
                                      style2, "S",
-                                    style1,"\n 否 □")
-        # worksheet.merge_range('E%d:E%d' % (flag, flag + 3))
+                                     style1,"\n否 □",
+                                    style_center)
     # 偏移
     for i in range(1, len(listmsg) + 1):
         flag = 6 + (i - 1) * 4
-        worksheet.merge_range('O%d:O%d' % (flag, flag + 3), "是 S\n否 □",style2)
+        worksheet.merge_range('O%d:O%d' % (flag, flag + 3), 1, style1)
+        worksheet.write_rich_string("O%d" % (flag),
+                                    style1, "是 ",
+                                    style2, "S",
+                                    style1, "\n否 □",
+                                    style_center)
     #设置列宽(字符)
     worksheet.set_column('A:A',3)
     worksheet.set_column('C:D',4)

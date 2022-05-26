@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="371f52c2-f96c-445a-bfa1-a0c5ceb88aee" name="变更" comment="峰高、质荷比完成（未分页）" />
+    <list default="true" id="371f52c2-f96c-445a-bfa1-a0c5ceb88aee" name="变更" comment="峰高、质荷比完成（未分页）">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/excel/fenggao_excel1.py" beforeDir="false" afterPath="$PROJECT_DIR$/excel/fenggao_excel1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/excel/zhihebi_excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/excel/zhihebi_excel.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +65,7 @@
       <recent name="C:\Users\admin\PycharmProjects\study\API" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.fenggao_excel1 (1)">
+  <component name="RunManager" selected="Python.zhihebi_excel (1)">
     <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="requests" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -241,8 +245,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.fenggao_excel1 (1)" />
         <item itemvalue="Python.zhihebi_excel (1)" />
+        <item itemvalue="Python.fenggao_excel1 (1)" />
         <item itemvalue="Python.1" />
         <item itemvalue="Python.zhihebi_excel (1)" />
         <item itemvalue="Python.fenggao_excel1" />
@@ -482,7 +486,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653536622971</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="峰高、质荷比完成（未分页）">
+      <created>1653536964353</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1653536964353</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
