@@ -4,7 +4,7 @@
 """
 
 cout=1
-i=14
+i=int(input(">>>"))
 def er(cout,i):
     while i>10:
         cout+=1
